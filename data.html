@@ -101,7 +101,77 @@
   <div class="imageinsert">
     <img src="illustrations/datalesson_fig3_1.png" class="image" alt="Dichotomous variables formatted in sheet">
     <p class="caption">Figure 3: Tutorial type, gender, experience, and task values formatted as dichotomous variables.</p>
-  </div>
+  </div> 
+  <p>Data values, or rows, have been input for each subject in the experiment.</p>
+<ol>
+  <li>Decide on input conventions and stick to them. In the gender column, change the "female" value to "F".</li>
+  <li>Separate data into component values whenever possible by adding new columns. For example, tasks_completed values (Y/Y/N) can be broken up into three components. So, add columns task1, task2, and task3, and reformat values accordingly.</li>
+  <li>Double-check to ensure no data entry errors have been made, then delete the old tasks_completed column.</li>
+  <li>Your Raw_Dataset spreadsheet should now look like Figure 2.</li>
+</ol>
+
+<div class="imageinsert">
+  <img src="illustrations/datalesson_fig2.png" class="image" alt="Values listed in sheet">
+  <p class="caption">Values for each variable are entered in a consistent format.</p>
+</div>
+
+<p>Replace categorical data values with "0" or "1" (0=no, 1=yes) to indicate whether or not the value is represented for the given subject/item. This makes the categorical values dichotomous, which gives the researcher maximum flexibility in testing for relationships or correlations.</p>
+
+<aside class="sidebar">
+  <p><strong>Dichotomous variables allow for the easy isolation of characteristics for analysis. For example, separating experience levels allows the researcher to test in PASW whether subjects with low experience have perceived ease of use scores significantly different from those with medium and high experience levels.</strong></p>
+</aside>
+
+<p>Copy the Raw_Dataset values into the Sheet2 tab. Rename this sheet Formatted_Data.</p>
+<ol>
+  <li>In the Formatted_Data sheet, add new columns with Insert > Columns for each distinct value in categorical data columns (tutorial_types, gender, exp_level, task1, task2, and task3). You do not have to add a new column for task1, task2, and task3 because their values are already dichotomous.</li>
+  <li>Rename columns according to each possible categorical value. Copy and paste the values from the original column.</li>
+  <li>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: Edit > Replace.</li>
+  <li>Your Formatted_Data spreadsheet should now look like Figure 3.</li>
+</ol>
+
+<div class="imageinsert">
+  <img src="illustrations/datalesson_fig3.png" class="image" alt="Dichotomous variables formatted in sheet">
+  <p class="caption">Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</p>
+</div>
+
+<h2>Run Descriptive Statistics</h2>
+<aside class="sidebar">
+  <p><strong>Analyzing descriptive statistics may lead you to ask new questions. For example, perc_enjoy is much higher on average than perc_usefulness, which also has a large variance. This suggests that a segment of users may not have considered the system useful even though they enjoyed using it.</strong></p>
+</aside>
+
+<ol>
+  <li>Run descriptive (summary) statistics on the dataset and output results in a new spreadsheet. If necessary, rearrange columns so that data requiring summary, those with continuous values, are adjacent.</li>
+  <li>Write down the "input range" (i.e., H2:J26) of the data requiring summary, making sure not to include variable labels.</li>
+  <li>Go to Tools > Add-Ins... and make sure Analysis ToolPak is checked. Click OK.</li>
+  <li>Go to Tools > Data Analysis and select Descriptive Statistics. Click OK.</li>
+  <li>Enter the input range in the blank and check Summary Statistics. Click OK.</li>
+  <li>Your Descriptive_Stats spreadsheet should now look like Figure 4.</li>
+</ol>
+
+<div class="imageinsert">
+  <img src="illustrations/datalesson_fig4.png" class="image" alt="Descriptive statistics summary">
+  <p class="caption">Excel will not run descriptive statistics with non-numeric characters, so the variable labels must be re-entered.</p>
+</div>
+
+<h2>Run Inferential Statistics</h2>
+<p>Open PASW and upload the spreadsheet. The most commonly used statistical methods and tests are found under the Analyze menu in the standard toolbar.</p>
+
+<div class="imageinsert">
+  <img src="illustrations/datalesson_fig5.png" class="image" alt="PASW Analyze Menu">
+  <p class="caption">PASW’s Analyze menu offers various statistical methods and tests.</p>
+</div>
+
+<p>You should have determined that the Kruskal-Wallis one-way analysis of variance is the appropriate test. Go to Analyze > Nonparametric Tests > K Independent Samples... and follow the prompts to select the appropriate variables.</p>
+
+<div class="imageinsert">
+  <img src="illustrations/datalesson_fig6.png" class="image" alt="Kruskal-Wallis setup in PASW">
+  <p class="caption">For Kruskal-Wallis, an independent (free_play) and a dependent variable (perc_usefulness) are selected.</p>
+</div>
+
+<footer>
+  <p>Now that you've finished the lesson, complete a short quiz to test your understanding of formatting research datasets for comprehensive statistical analysis.</p>
+</footer>
+
 
 
 </body>
