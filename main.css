@@ -1,14 +1,13 @@
-/* Importing Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Page Body Padding */
 body {
     padding-left: 3rem;
     padding-right: 3rem;
     background-color: #fcdddd; 
-    font-family: 'Roboto', sans-serif; /* Apply the font to the body */
-    font-size: 16px; /* Set a base font size */
-    line-height: 1.6; /* Improved line height for readability */
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+    line-height: 1.6; 
 }
 
 /* Navigation Bar Styling */
@@ -37,8 +36,8 @@ nav ul li a {
     color: #030303;
     text-align: center;
     padding: 10px;
-    font-weight: 700; /* Use bold weight for nav links */
-    font-size: 18px; /* Slightly larger font size for navigation links */
+    font-weight: 700; 
+    font-size: 18px; 
     text-decoration: none;
 }
 
@@ -74,7 +73,7 @@ a:hover {
 
 /* Text Emphasis */
 .emphasis {
-    font-weight: 700; /* Bold weight for emphasis */
+    font-weight: 700;
 }
 
 .ital {
@@ -93,7 +92,7 @@ aside {
     padding: 20px;
     margin-left: 20px;
     float: right;
-    background-color: #cfcfcf; /* Light gray background for aside */
+    background-color: #cfcfcf; 
 }
 
 /* Image Insert Styling */
@@ -106,24 +105,23 @@ div.imageinsert {
 .caption {
     display: block;
     font-family: 'Roboto', sans-serif; 
-    font-size: 14px; /* Smaller size for captions */
+    font-size: 14px;
     font-style: italic;
     color: #666;
     margin-top: 10px;
 }
 
-/* Heading Styles */
+
 h1 {
-    font-size: 2.5rem; /* Large heading */
-    font-weight: 700; /* Bold */
-}
+    font-size: 2.5rem;
+    font-weight: 700; }
 
 h2 {
-    font-size: 2rem; /* Medium heading */
-    font-weight: 600; /* Semi-bold */
+    font-size: 2rem; 
+    font-weight: 600; 
 }
 
 h3 {
-    font-size: 1.5rem; /* Smaller heading */
-    font-weight: 500; /* Normal */
+    font-size: 1.5rem; 
+    font-weight: 500; 
 }
